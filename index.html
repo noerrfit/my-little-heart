@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Something for You ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPENING SCREEN -->
+    <main id="opening" class="opening">
+        <div class="opening-content">
+
+            <div class="heart-icon">♥</div>
+
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+
+            <h1>Someone Special</h1>
+
+            <p class="subtitle">
+                Enter a name and let the magic begin.
+            </p>
+
+            <!-- Input nama -->
+            <form id="nameForm">
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Type a name..."
+                    autocomplete="off"
+                    maxlength="40"
+                    required
+                >
+
+                <button type="submit" id="createButton">
+                    Create <span>♥</span>
+                </button>
+            </form>
+
+            <p class="small-note">Made with love ✨</p>
+
+        </div>
+    </main>
+
+
+    <!-- HEART ANIMATION SCREEN -->
+    <main id="heartScreen" class="heart-screen" hidden>
+
+        <!-- JavaScript akan menempatkan tulisan nama di sini -->
+        <div id="heartContainer" class="heart-container"></div>
+
+        <!-- Tombol musik cadangan jika autoplay gagal -->
+        <button
+            type="button"
+            id="musicButton"
+            class="music-button"
+            aria-label="Putar atau jeda musik"
+            hidden
+        >
+            ▶ Play Music
+        </button>
+
+    </main>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="Rizky Febian & Adrian Khalif - Alamak (Official Lyric Video).mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutaran audio.
+    </audio>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
